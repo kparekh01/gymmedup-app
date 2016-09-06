@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'less-rails', '~> 2.7.0'
+gem 'therubyracer'
+gem 'jquery-ui-rails'
+gem "font-awesome-rails"
 gem 'bootstrap-sass'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

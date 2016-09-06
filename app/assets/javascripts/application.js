@@ -11,7 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
+//= require theme_manifest
+//= require gymmed_up
 //= require_tree .
