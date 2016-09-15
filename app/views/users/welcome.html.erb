@@ -155,12 +155,11 @@
 				<div id="header" class="header-lg header-dark fixed-top transparent">
 					<div id="scrollspy" class="container header-container">
 
-						<!-- Begin logo  -->
+						<!-- Begin clock  -->
 						<div class="logo font-alter-1">
-                <h1>Gymmed-Up</h1>
-                <!-- put in a live version of local time here using JS -->
-						</div>
-						<!-- End logo -->
+                <h1 id="clock"> </h1>
+            </div>
+						<!-- End clock -->
 
 						<!-- Begin navbar
 						================== -->
@@ -197,7 +196,7 @@
 								-->
 								<ul class="nav navbar-nav navbar-right nav-pills">
 
-									<li class="active"><a class="mlc sm-scroll" href="#intro">Home</a></li>
+									<li class="active" class="mlc sm-scroll" >Home</li>
 									<li><span class="nav-link-separator">/</span></li>
 
 									<!-- Begin dropdown
@@ -218,67 +217,21 @@
 											<li><a class="mlc sm-scroll" href="#section-9">Video Promo</a></li>
 											<li><a class="mlc sm-scroll" href="#section-7">Testimonials</a></li>
 											<li><a class="mlc sm-scroll" href="#section-10">Our Clients</a></li>
+											<li><span class="nav-link-separator">/</span></li>
+											<li><a class="mlc sm-scroll" href="#section-2">Services</a></li>
+											<li><span class="nav-link-separator">/</span></li>
+											<li><a class="mlc sm-scroll" href="#section-3">Portfolio</a></li>
+											<li><span class="nav-link-separator">/</span></li>
+											<li><a class="mlc sm-scroll" href="#section-4">Pricing</a></li>
+											<li><span class="nav-link-separator">/</span></li>
+											<li><a class="mlc sm-scroll" href="#section-6">Articles</a></li>
+											<li><span class="nav-link-separator">/</span></li>
+											<li><a class="mlc sm-scroll" href="#section-8">Contact</a></li>
 
-											<!-- Begin dropdown (submenu)
-											==============================
-											* Use class "dropdown-hover" to make navigation toggle on desktop hover.
-											* Use class "dropdown-uppercase" to enable dropdown menu uppercase letters.
-											* Use class "dropdown-menu-dark" to enable dark dropdown menu.
-											* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
-											* Use class "dropdown-submenu" for dropdown submenu.
-											-->
-											<li class="dropdown dropdown-submenu dropdown-uppercase dropdown-menu-color dropdown-hover">
-												<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-													Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
-												</a>
-												<ul class="dropdown-menu">
 
-                          <li><%= link_to "Sign in",  new_user_session_path %></li>
-													<li><a class="mlc" href="#">Submenu Link 2</a></li>
-													<li><a class="mlc" href="#">Submenu Link 3</a></li>
-													<li><a class="mlc" href="#">Submenu Link 4</a></li>
-													<li><a class="mlc" href="#">Submenu Link 5</a></li>
 
-													<!-- Begin dropdown (submenu)
-													==============================
-													* Use class "dropdown-hover" to make navigation toggle on desktop hover.
-													* Use class "dropdown-uppercase" to enable dropdown menu uppercase letters.
-													* Use class "dropdown-menu-dark" to enable dark dropdown menu.
-													* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
-													* Use class "dropdown-submenu" for dropdown submenu.
-													-->
-													<li class="dropdown dropdown-submenu dropdown-uppercase dropdown-menu-color dropdown-hover">
-														<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-															3 Level Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
-														</a>
-														<ul class="dropdown-menu">
-															<li><a class="mlc" href="#">Submenu Link 1</a></li>
-															<li><a class="mlc" href="#">Submenu Link 2</a></li>
-															<li><a class="mlc" href="#">Submenu Link 3</a></li>
-															<li><a class="mlc" href="#">Submenu Link 4</a></li>
-															<li><a class="mlc" href="#">Submenu Link 5</a></li>
-														</ul> <!-- /.dropdown-menu -->
-													</li>
-													<!-- End dropdown -->
 
-												</ul> <!-- /.dropdown-menu -->
-											</li>
-											<!-- End dropdown -->
 
-										</ul> <!-- /.dropdown-menu -->
-									</li>
-									<!-- End dropdown -->
-
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="#section-2">Services</a></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="#section-3">Portfolio</a></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="#section-4">Pricing</a></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="#section-6">Articles</a></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="#section-8">Contact</a></li>
 
 								</ul>
 								<!-- End navbar-nav -->
@@ -304,94 +257,47 @@
 			* Use class "angle-left-bottom" or "angle-right-bottom" to change intro bottom angle.
 			* Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
 			-->
-			<section id="intro" class="bg-image-parallax" style="background-image: url(assets/img/intro/intro-bg-2.jpg);">
+			<section id="intro" class="whole-screen bg-image-parallax" style="background-image: url(<%= asset_path('Intro_capstone_pic.jpg') %>;">
 
-				<div class="intro-inner">
 
-					<!-- Element cover
-					===================
-					* Use background transparent color classes for colored opacity (example: "bg-transparent-6-dark", "bg-transparent-8-5-red" ... 1 to 95). Look into "helper.css" file for more info.
-					-->
-					<span class="cover bg-transparent-2-dark bg-transparent-gradient-2"></span>
+			  <div class="intro-inner">
 
-					<!-- Begin intro caption -->
-					<div class="intro-caption vertical-align-center text-center text-white">
-						<h2 class="intro-title font-alter-1">
-							<span class="wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="0.5s">GYM</span>
-							<span class="wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="0.5s">MED</span>
-							<span class="wow bounceIn" data-wow-delay="1.6s">-</span>
-							<span class="wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="0.5s">U</span>
-							<span class="wow fadeInDown" data-wow-delay="1s" data-wow-duration="0.5s">P</span>
-						</h2>
-						<p class="intro-description wow fadeIn" data-wow-delay="2.2s">Motivating People Since Right Now!</p>
-						<div class="margin-top-30">
-              <%= link_to "Existing Users", new_user_session_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %>
-              <%= link_to "Create New Account", new_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%>
-              <!-- <%= button_to "Existing User", new_user_session_path, method: :get, class: "btn btn-white-bordered sm-scroll wow bounceIn" %> -->
-							<!-- # <a <%= link_to "Sign in",  new_user_session_path %> class="btn btn-white-bordered sm-scroll wow bounceIn" data-wow-delay="0.8s">Existing Users</a> -->
-							<!-- <a href="#section-8" class="btn btn-primary sm-scroll margin-top-10 wow bounceIn" data-wow-delay="1s"></a> -->
-						</div>
-					</div>
-					<!-- End intro caption -->
+			    <!-- Element cover
+			    ===================
+			    * Use background transparent color classes for colored opacity (example: "bg-transparent-6-dark", "bg-transparent-8-5-red" ... 1 to 95). Look into "helper.css" file for more info.
+			    -->
+			    <!-- <span class="cover bg-transparent-1-dark bg-transparent-gradient-3"></span> -->
 
-					<!-- Made with love :) -->
-					<div class="made-with-love hidden-xs">
-						<p class="text-gray">Made with <span class="text-main"><i class="fa fa-heart-o"></i></span></p>
-					</div>
+			    <!-- Begin intro caption -->
+			    <div class="intro-caption vertical-align-center text-center text-white">
+			      <h2 class="intro-title font-alter-1">
+			        <span class="wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="0.5s">GYM</span>
+			        <span class="wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="0.5s">MED</span>
+			        <span class="wow bounceIn" data-wow-delay="1.6s">-</span>
+			        <span class="wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="0.5s">U</span>
+			        <span class="wow fadeInDown" data-wow-delay="1s" data-wow-duration="0.5s">P</span>
+			      </h2>
+			      <p class="intro-description wow fadeIn" data-wow-delay="2.2s">Motivating People Since Right Now!</p>
+			      <div class="margin-top-30">
+			        <%= link_to "Existing Users", new_user_session_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %>
+			        <%= link_to "Create New Account", new_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%>
+			      </div>
+			    </div>
+			    <!-- End intro caption -->
 
-					<!-- Scroll down arrow -->
-					<a class="scroll-down-arrow sm-scroll text-center text-white" href="#section-1"><span><i class="fa fa-chevron-down"></i></span></a>
+			    <!-- Made with love :) -->
+			    <div class="made-with-love hidden-xs">
+			      <p class="text-gray">Sweat is <span class="text-main"><i class="fa fa-heart-o"></i></span></p>
+			    </div>
 
-				</div>
+
+
+			  </div>
 
 			</section>
+
 			<!-- End intro section -->
 
-
-			<!-- ===================================
-			///// Begin call to action section /////
-			========================================
-			* Use class "angle-left-bottom" or "angle-right-bottom" to change intro bottom angle.
-			* Use class "bg-image-fixed" to make background image fixed (otherwise use class "bg-image").
-			* Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
-			* Use class "bg-pattern" if you use background patterns (example: http://subtlepatterns.com/). Combine with class "bg-image-fixed".
-			-->
-			<section class="call-to-action-section bg-dark bg-pattern" style="background-image: url(assets/img/patterns/ptn-2.png);">
-
-				<!-- Element cover
-				===================
-				* Use background transparent color classes for colored opacity (example: "bg-transparent-6-dark", "bg-transparent-8-5-red" ... 1 to 95). Look into "helper.css" file for more info.
-				-->
-				<span class="cover bg-transparent-4-5-dark"></span>
-
-				<div class="container">
-					<div class="row wow fadeIn">
-
-						<!-- Left column -->
-						<div class="col-md-8 padding-right-40">
-
-							<h2 class="call-to-action-title text-uppercase text-gray-2">Pellentesque Dignissim Risus Ante</h2>
-							<p class="lead call-to-action-text text-gray">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore.
-							</p>
-							<p class="call-to-action-text lead text-gray margin-top-30"><strong>Cool / Innovative / Creative</strong></p>
-
-						</div> <!-- /.col -->
-
-						<!-- Right column -->
-						<div class="col-md-4 text-center">
-
-							<a href="https://wrapbootstrap.com/user/Themetorium" target="_blank" class="btn btn-primary-bordered btn-rounded-5x btn-xlg btn-block"><i class="fa fa-shopping-cart"></i> Buy This Template</a>
-							<br>
-							<a href="#" class="small text-gray">Or Learn More.. <i class="fa fa-graduation-cap"></i></a>
-
-						</div> <!-- /.col -->
-
-					</div><!-- /.row -->
-				</div> <!-- /.container -->
-			</section>
-			<!-- End call to action section -->
 
 
 			<!-- =================================

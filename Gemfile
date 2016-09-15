@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor', group: :production
 gem 'faker'
 gem 'less-rails', '~> 2.7.0'
 gem 'therubyracer'

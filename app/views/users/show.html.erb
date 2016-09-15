@@ -1,1 +1,149 @@
-<%= @another_user %>
+
+
+<!-- Google font (https://www.google.com/fonts) -->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'> <!-- Body font -->
+<link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'> <!-- Alternative font -->
+
+
+
+<section id="intro" class="whole-screen bg-image-parallax" style="background-image: url(<%= asset_path('Intro_capstone_pic.jpg') %>;">
+
+
+
+  <div class="intro-inner">
+
+    <!-- Element cover
+    ===================
+    * Use background transparent color classes for colored opacity (example: "bg-transparent-6-dark", "bg-transparent-8-5-red" ... 1 to 95). Look into "helper.css" file for more info.
+    -->
+    <!-- <span class="cover bg-transparent-1-dark bg-transparent-gradient-3"></span> -->
+
+    <!-- Begin intro caption -->
+    <div class="intro-caption vertical-align-center text-center text-white">
+      <h2 class="intro-title font-alter-1">
+        <span class="wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="0.5s">GYM</span>
+        <span class="wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="0.5s">MED</span>
+        <span class="wow bounceIn" data-wow-delay="1.6s">-</span>
+        <span class="wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="0.5s">U</span>
+        <span class="wow fadeInDown" data-wow-delay="1s" data-wow-duration="0.5s">P</span>
+      </h2>
+      <p class="intro-description wow fadeIn" data-wow-delay="2.2s">Motivating People Since Right Now!</p>
+      <div class="margin-top-30">
+        <%= link_to "Existing Users", new_user_session_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %>
+        <%= link_to "Create New Account", new_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%>
+      </div>
+    </div>
+    <!-- End intro caption -->
+
+    <!-- Made with love :) -->
+    <div class="made-with-love hidden-xs">
+      <p class="text-gray">Sweat is <span class="text-main"><i class="fa fa-heart-o"></i></span></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =================================
+///// Begin section 1 (about us) /////
+================================== -->
+<section id="section-1" class="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <!-- Begin heading
+        ===================
+        * Use class "heading-center" or "heading-right" to align heading.
+        * Use class "heading-xs", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to shange heading size.
+        * Use class "heading-hover" to enable heading hover effect.
+        * Use class "heading-uppercase" to enable uppercase letters.
+        -->
+        <div class="heading heading-lg heading-hover wow fadeIn">
+          <span class="heading-title-ghost">About Us</span>
+          <h2 class="heading-title">About Us</h2>
+
+          <!-- Begin divider
+          ===================
+          * Use class "hr-width-1", "hr-width-2" -> up to "hr-width-10" to shange divider width.
+          * Use class "hr-1x", "hr-2x", "hr-3x", "hr-4x" or "hr-5x" to shange divider size.
+          * Use class "hr-dotted", "hr-dashed" or "hr-double" to shange divider style.
+          -->
+          <hr class="hr-width-1 hr-5x border-main">
+          <!-- End divider -->
+
+          <p class="heading-tescription lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip consequat. Tempor incididunt ut labore et
+            dolore magna aliquapta. <a href="#">Read More...</a>
+          </p>
+        </div>
+        <!-- End heading -->
+
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+
+  <div class="container margin-top-20">
+    <div class="row wow fadeIn" data-wow-delay="0.3s">
+
+      <div class="col-sm-6 col-md-3">
+        <!-- Begin info box-1 -->
+        <div class="info-box info-box-1">
+          <span class="info-box-icon"><i class="fa fa-clone"></i></span>
+          <div class="info-box-info">
+            <h4 class="info-box-title">Fully Responsive</h4>
+            <p class="info-box-text">
+              Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
+            </p>
+          </div>
+        </div>
+        <!-- End info box-1 -->
+      </div> <!-- /.col -->
+
+      <div class="col-sm-6 col-md-3">
+        <!-- Begin info box-1 -->
+        <div class="info-box info-box-1">
+          <span class="info-box-icon"><i class="fa fa-diamond"></i></span>
+          <div class="info-box-info">
+            <h4 class="info-box-title">Clean Code</h4>
+            <p class="info-box-text">
+              Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
+            </p>
+          </div>
+        </div>
+        <!-- End info box-1 -->
+      </div> <!-- /.col -->
+
+      <div class="col-sm-6 col-md-3">
+        <!-- Begin info box-1 -->
+        <div class="info-box info-box-1">
+          <span class="info-box-icon"><i class="fa fa-television"></i></span>
+          <div class="info-box-info">
+            <h4 class="info-box-title">One Page</h4>
+            <p class="info-box-text">
+              Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
+            </p>
+          </div>
+        </div>
+        <!-- End info box-1 -->
+      </div> <!-- /.col -->
+
+      <div class="col-sm-6 col-md-3">
+        <!-- Begin info box-1 -->
+        <div class="info-box info-box-1">
+          <span class="info-box-icon"><i class="fa fa-bicycle"></i></span>
+          <div class="info-box-info">
+            <h4 class="info-box-title">Awesome Icons</h4>
+            <p class="info-box-text">
+              Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
+            </p>
+          </div>
+        </div>
+        <!-- End info box-1 -->
+      </div> <!-- /.col -->
+
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+
+</section>
+<!-- End section 1 -->
