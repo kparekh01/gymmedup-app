@@ -10,8 +10,28 @@ function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 39.5935951, lng: -96.4504615},
     zoom: 5,
-    
-    mapTypeId: 'roadmap'
+    mapTypeId: 'roadmap',
+    styles: [
+      {
+        featureType: 'all',
+        stylers: [
+          { saturation: -80 }
+        ]
+      },{
+        featureType: 'road.arterial',
+        elementType: 'geometry',
+        stylers: [
+          { hue: '#00ffee' },
+          { saturation: 50}
+        ]
+      },{
+        featureType: 'poi.business',
+        elementType: 'labels',
+        stylers: [
+          { visibility: 'on' }
+        ]
+      }
+    ]
   });
 
   var infoWindow = new google.maps.InfoWindow({map: map});
@@ -27,7 +47,7 @@ function initAutocomplete() {
       infoWindow.setPosition(pos);
       infoWindow.setContent('Location found.');
       map.setCenter(pos);
-      map.setZoom(16);
+      map.setZoom(14);
 
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter()); });
