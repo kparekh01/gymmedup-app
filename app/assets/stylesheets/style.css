@@ -1,8 +1,24 @@
+.gym-button{
+  background-color: #FF4500;
+  border: 2px solid #555555;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.back-ground-h1{
+  background-color: grey;
+}
 .whole-screen{
   height: 100vh;
 }
 html, body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }

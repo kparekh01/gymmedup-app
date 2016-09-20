@@ -9,4 +9,10 @@ Rails.application.routes.draw do
 
   get '/gyms' => 'gyms#index'
 
+  namespace :api do
+    namespace :v1 do
+      post '/gyms' => 'gyms#create'
+    end
+  end
+
 end

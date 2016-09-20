@@ -1,7 +1,11 @@
-<h1>Choose a gym you are a member of:</h1>
+<link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
 
+<div  class="back-ground-h1" style="font-family: 'Black Ops One', cursive; font-size: 42px;">Choose a gym you currently belong to:</div>
 <input id="pac-input" class="controls" type="text" placeholder="Search For Your Gym Here!" size="50">
+<div class="alert alert-success hide" id="gym-alert">
+
+</div>
 <div id="map"></div>
-<!-- Replace the value of the key parameter with your own API key. -->
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDOxfYUnJyZDMc4g6AjSv54UQsdIKyUiQ&libraries=places&callback=initAutocomplete"
-         async defer></script>
+ async defer></script>
