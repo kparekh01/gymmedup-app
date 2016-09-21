@@ -8,3 +8,8 @@
   <li>a map button which will lead the user to a google map of activities in their area(everything from people looking for a workout partner to a person setting up a game locally (soccer, football, etc) looking for players to join</li>
   <li>search button, where you can search for users by their user names or other criteria like similar training skill, sports interest, tag interest, etc..</li>
 </ul>
+
+<div class="margin-top-30">
+  <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %>
+  <%= link_to 'Edit Account', edit_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%>
+</div>
