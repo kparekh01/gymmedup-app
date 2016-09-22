@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'rooms/show'
+  get 'rooms/show' => 'rooms#show'
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -16,5 +16,9 @@ Rails.application.routes.draw do
       post '/gyms' => 'gyms#create'
     end
   end
+
+  get 'rooms/show' => 'rooms#show'
+
+  mount ActionCable.server => '/cable'
 
 end
