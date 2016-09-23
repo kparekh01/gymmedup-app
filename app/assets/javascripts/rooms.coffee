@@ -4,7 +4,7 @@
 
 $ ->
   $messages = $('#messages')
-  $messages.scrollTop $messages.prop('scrollHeight')
+  $messages.scrollTop($messages[0].scrollHeight)
   $('#message_input').focus()
 
 $(document).on 'keypress', '#message_input', (e) ->

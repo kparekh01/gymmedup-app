@@ -8,16 +8,5 @@
       });
     }
     setup();
-
-    $scope.addGym = function(employee){
-      $http.post('/api/v1/employees.json', employee).success(function(response){
-        $scope.message = response.data.message;
-        $scope.employees.push(employee);
-        $scope.employee = {};
-      }).error(function(response){
-        $scope.errors = response.errors;
-      });
-    };
-
   });
 })();
