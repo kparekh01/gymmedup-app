@@ -31,14 +31,14 @@
   <div class="message-history" id="messages">
     <%= render @messages %>
   </div>
+  <div style="position: relative; width: 100%; height: 2em; bottom: 0; left: 225px;">
+    <input type="text"  id="message_input" class="input-box" placeholder="Type your message here and press enter to send"/>
+  </div>
 </div>
 <div class="footer">
   <div class="user-menu">
     <span class="user-menu_profile-pic"></span><span class="user-menu_username"><%= current_user.user_name %></span>
     <span class="connection_status">online</span>
     <span class="logout"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></span>
-  </div>
-  <div class="input-box">
-    <input type="text" class="input-box_text" id="message_input" placeholder="Type your message here and press enter to send"/>
   </div>
 </div>
