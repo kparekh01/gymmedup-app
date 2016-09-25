@@ -13,6 +13,8 @@ class User < ApplicationRecord
 
   belongs_to :gym, optional: true
 
+  mount_uploader :photo, ProfilePhotoUploader
+
   # Start following a user.
   def follow(other_user)
     active_relationships.create(followed_id: other_user.id)
@@ -27,5 +29,7 @@ class User < ApplicationRecord
   def following?(other_user)
     following.include?(other_user)
   end
+
+
 
 end

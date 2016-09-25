@@ -37,7 +37,7 @@
 </div>
 <div class="footer">
   <div class="user-menu">
-    <span class="user-menu_profile-pic"></span><span class="user-menu_username"><%= current_user.user_name %></span>
+    <span class="user-menu_profile-pic" style="background-image:url(<%= current_user.photo.url %>)"></span><span class="user-menu_username"><%= current_user.user_name %></span>
     <span class="connection_status">online</span>
     <span class="logout"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></span>
   </div>

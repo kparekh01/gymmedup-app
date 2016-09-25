@@ -10,4 +10,11 @@ class UsersController < ApplicationController
     @another_user = User.find_by(id: params[:id])
   end
 
+  def update
+    current_user.update(
+      photo: params[:photo]
+    )
+    redirect_to "/users"
+  end
+
 end
