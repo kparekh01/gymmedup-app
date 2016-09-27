@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   def show #another users show page
     @following = current_user.following
+    
   end
 
   def update
