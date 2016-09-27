@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   end
 
   def show #another users show page
-    @another_user = User.find_by(id: params[:id])
+    @following = current_user.following
   end
 
   def update

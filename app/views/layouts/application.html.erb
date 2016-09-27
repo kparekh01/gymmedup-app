@@ -3,7 +3,6 @@
 
   <head>
     <title>GymmedupApp</title>
-    <title><%= content_for?(:title) ? yield(:title) : 'ActionCable Chat' %></title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>

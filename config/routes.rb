@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
   root  "users#welcome"
   get '/users/show' => 'users#show'
   patch 'users/:id' => 'users#update'
@@ -17,7 +18,10 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'rooms/show' => 'rooms#show'
+  get 'rooms/:id' => 'rooms#show'
+
+  get '/conversations/new' => 'conversations#new'
+  post '/conversations' => 'conversations#create'
 
   mount ActionCable.server => '/cable'
 

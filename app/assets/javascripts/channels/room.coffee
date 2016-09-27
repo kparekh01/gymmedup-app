@@ -14,4 +14,4 @@ App.room = App.cable.subscriptions.create "RoomChannel",
 
 
    speak: (message, conversation_id)->
-    @perform 'speak', message: message
+    @perform 'speak', message: message, conversation_id: conversation_id

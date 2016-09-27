@@ -42,3 +42,5 @@
     <span class="logout"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></span>
   </div>
 </div>
+
+<input type="hidden" value="<%= params[:id] %>" id="conversation_id">

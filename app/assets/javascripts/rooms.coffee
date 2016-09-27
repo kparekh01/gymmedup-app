@@ -10,6 +10,7 @@ $ ->
 
 $(document).on 'keypress', '#message_input', (e) ->
   if e.keyCode == 13 and e.target.value
-    App.room.speak(e.target.value)
+    $conversation_id = $('#conversation_id').val()
+    App.room.speak(e.target.value, $conversation_id)
     e.target.value = ''
     e.preventDefault()

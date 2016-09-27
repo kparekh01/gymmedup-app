@@ -1,0 +1,15 @@
+
+
+
+  <% @following.each do |person| %>
+      <%= image_tag(person.photo) %>
+          <%= form_tag("/conversations", :method => 'post') do %>
+          <%= hidden_field_tag(:recipient_id, person.id) %>
+          <%= submit_tag "Chat With User"%>
+          <% end %>
+      <h2>User Name: <%= person.user_name %></h2>
+      <h2>Usere Email: <%= person.email %></h2>
+      <h2>Name: <%= person.first_name %> <%= person.last_name %></h2>
+      <h3>Bio: <%= person.bio %></h3>
+  <br>
+  <% end  %>
