@@ -1,49 +1,57 @@
-<h2>Let's Roll!</h2>
+<section id="intro" class="whole-screen bg-image-parallax" style="background-image: url(<%= asset_path('registration_2.jpg') %>;">
+  <span class="cover bg-transparent-1-dark bg-transparent-gradient-0"></span>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+  <div class="border-form-div">
+    <h2>Let's Roll!</h2>
 
-  <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, autofocus: true %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.label :first_name %><br />
+        <%= f.text_field :first_name, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :last_name %><br />
+        <%= f.text_field :last_name, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :birth_date %><br />
+        <%= f.date_field :birth_date, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :user_name %><br />
+        <%= f.text_field :user_name, maxlength: 25, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+
   </div>
 
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :birth_date %><br />
-    <%= f.date_field :birth_date, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :user_name %><br />
-    <%= f.text_field :user_name, maxlength: 25, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</section>

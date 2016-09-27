@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-
+gem 'seed_dump'
 gem 'carrierwave'
 gem 'rails_12factor', group: :production
 gem 'faker'
