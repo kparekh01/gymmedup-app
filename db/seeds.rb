@@ -1,4 +1,4 @@
-User.create!([
+u = User.new([
   {email: "kperrin01@gmail.com", encrypted_password: "$2a$11$BYZLESb1a5WX59IUbk7ahudqqshfxlVkwPfChFI9CdmMFyiJ95t5q", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, confirmation_token: "upiGb7MxCFJ3JF4Ctu4_", confirmed_at: "2016-08-27 13:17:39", confirmation_sent_at: "2016-08-25 01:06:52", unconfirmed_email: nil, first_name: "Kenny", last_name: "Perrin", user_name: "kperrin01", admin: false, bio: nil, birth_date: "1967-05-20", gym_id: nil, zip_code: nil, photo: nil},
   {email: "cstone@gmail.com", encrypted_password: "$2a$11$XgNLuCVBZ.TD5rpAXFu8ruWxbn/5ZckxdbpOOe7TViWLSo/e7PtXS", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, confirmation_token: "X4NxHDnTefu9ZtqGo87H", confirmed_at: "2016-08-27 13:17:39", confirmation_sent_at: "2016-08-25 00:49:15", unconfirmed_email: nil, first_name: "claudia", last_name: "stone", user_name: "cstone01", admin: false, bio: nil, birth_date: "1945-01-23", gym_id: nil, zip_code: nil, photo: nil},
   {email: "jbelieber@gmail.com", encrypted_password: "$2a$11$oNpKIfHs4NOKxpC0Ph2BteGtX9koyZ.Jm9IXhqr.ZZGMGHVPQMpwe", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, confirmation_token: "pgQbsYLFZD_TS-7ygF7k", confirmed_at: "2016-08-27 13:17:39", confirmation_sent_at: "2016-08-25 00:59:36", unconfirmed_email: nil, first_name: "Justin", last_name: "Belieber", user_name: "jbelieber01", admin: false, bio: nil, birth_date: "1990-03-28", gym_id: nil, zip_code: nil, photo: nil},
@@ -1407,6 +1407,8 @@ User.create!([
   {email: "krocka007@yahoo.com", encrypted_password: "$2a$11$J9oNUTnyA4.BD7MInveT.O440qtD.07KZMKrgQ2abjzAyhCgg5n8C", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, confirmation_token: "t2j7_x3jviFarB5XqiXv", confirmed_at: "2016-09-27 15:52:50", confirmation_sent_at: "2016-09-27 14:55:33", unconfirmed_email: nil, first_name: "kenney", last_name: "boyyyy", user_name: "krocka007", admin: false, bio: nil, birth_date: "1800-09-21", gym_id: nil, zip_code: nil, photo: nil},
   {email: "kparekh01@gmail.com", encrypted_password: "$2a$11$MX12WeXe3p9oM8bOq28Pve65qnf368MJJk9NYbC4b/JQ6KPQFT15u", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 29, current_sign_in_at: "2016-09-27 17:25:20", last_sign_in_at: "2016-09-26 23:43:48", current_sign_in_ip: "::1", last_sign_in_ip: "::1", confirmation_token: "iiz9otsbXmANzryEsp_h", confirmed_at: "2016-08-22 14:14:07", confirmation_sent_at: "2016-08-22 14:12:29", unconfirmed_email: nil, first_name: "kenneth", last_name: "parekh", user_name: "kparekh01", admin: false, bio: "This is a test bio to see if changes were saved.  I am adding some more infor to y bio. Another test for routing. here, just checking to make sure this still works!", birth_date: "1977-11-28", gym_id: 5, zip_code: nil, photo: "penguin-chick.jpg"}
 ])
+u.save!(validate: false)
+
 Conversation.create!([
   {sender_id: 1, recipient_id: nil},
   {sender_id: 1, recipient_id: nil},
@@ -1582,6 +1584,7 @@ Message.create!([
   {content: "yup", user_id: 1, conversation_id: "8"},
   {content: "still here", user_id: 1, conversation_id: "8"}
 ])
+
 Relationship.create!([
   {follower_id: 5, followed_id: 3},
   {follower_id: 3, followed_id: 5},
