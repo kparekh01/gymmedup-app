@@ -75,9 +75,9 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
+   production:
+     url: <%= ENV['https://gymmed-up.herokuapp.com/'] %>
+
 production:
   <<: *default
   database: gymmedup-app_production
