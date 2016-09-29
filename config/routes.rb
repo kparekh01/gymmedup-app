@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
 
   root  "users#welcome"
-
+  
   get '/users/show' => 'users#show'
   patch 'users/:id' => 'users#update'
 

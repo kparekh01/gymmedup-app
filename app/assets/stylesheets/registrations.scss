@@ -28,3 +28,7 @@
   margin-bottom: 30px;
   padding: 7px 10px;
 }
+
+.notice:empty {
+  display: none;
+}

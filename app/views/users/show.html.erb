@@ -1,15 +1,21 @@
 
+<div style="background-image: url(<%= asset_path('registration_2.jpg') %>;">
 
 
-  <% @following.each do |person| %>
-      <%= image_tag(person.photo) %>
-          <%= form_tag("/conversations", :method => 'post') do %>
-          <%= hidden_field_tag(:recipient_id, person.id) %>
-          <%= submit_tag "Chat With User"%>
-          <% end %>
-      <h2>User Name: <%= person.user_name %></h2>
-      <h2>Usere Email: <%= person.email %></h2>
-      <h2>Name: <%= person.first_name %> <%= person.last_name %></h2>
-      <h3>Bio: <%= person.bio %></h3>
-  <br>
-  <% end  %>
+    <div class="text-white">
+      <% @following.each do |person| %>
+          <%= image_tag(person.photo) %>
+              <%= form_tag("/conversations", :method => 'post') do %>
+              <%= hidden_field_tag(:recipient_id, person.id) %>
+              <%= submit_tag "Chat With User", class: "btn btn-primary sm-scroll margin-top-10 wow bounceIn", 'data-wow-delay': '1.0s'%>
+              <% end %>
+          <h2>User Name: <%= person.user_name %></h2>
+          <h1>Their Gym:  <%= @gym.name unless @gym == nil %></h1>
+          <h2>Usere Email: <%= person.email %></h2>
+          <h2>Name: <%= person.first_name %> <%= person.last_name %></h2>
+          <h3>Bio: <%= person.bio %></h3>
+      <br>
+      <% end %>
+    </div>
+</div>
+<!-- End intro section -->
