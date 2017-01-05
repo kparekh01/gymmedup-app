@@ -83,3 +83,6 @@ production:
   database: gymmedup-app_production
   username: gymmedup-app
   password: <%= ENV['GYMMEDUP-APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
