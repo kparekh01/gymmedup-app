@@ -19,170 +19,132 @@
 
 
 
+			<!-- Begin header -->
+		  <header id="header-wrap">
+		    <div id="header" class="header-md header-dark show-hide-on-scroll transparent">
+		      <div id="scrollspy" class="container header-container">
 
-			<!-- ==============
-			///// Begin header
-			=================== -->
-			<header id="header-wrap">
+		        <!-- clock -->
+		        <div class="logo font-alter-1">
+		            <h1 id="clock"> </h1>
+		        </div>
+		        <!-- clock -->
 
-				<!-- Begin Header content
-				==========================
-				* Use class "show-hide-on-scroll" to hide header on scroll down and show on scroll up.
-				* Use class "fixed-top" to set header to fixed position.
-				* Use class "transparent" for transparent header.
-				* Use class "transparent-border" to enable bottom border on transparent header (class "transparent" is still required).
-				* Use class "semi-transparent" for semi-transparent header.
-				* Use class "header-fluid" for full width header.
-				* Use class "header-dark" for dark header.
-				* Use class "header-color" for header custom background color. By default theme main color is used, but you ca use custom background color classes (class "header-color" is still required!). Look into "helper.css" file for more info.
-				* Use class "header-shadow" to enable header bottom shadow.
-				* Use class "header-md", "header-lg" or "header-xlg" to change header size.
-				-->
-				<div id="header" class="header-md header-dark show-hide-on-scroll transparent">
-					<div id="scrollspy" class="container header-container">
+		        <!-- Begin navbar -->
+		        <nav class="navbar pull-right">
 
-            <!-- Begin clock  -->
-            <div class="logo font-alter-1">
-                <h1 id="clock"> </h1>
-            </div>
-            <!-- End clock -->
+		          <!-- Begin toggle button (get grouped for better mobile display) -->
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main" aria-expanded="false">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		          </div>
+		          <!-- End toggle button -->
 
-						<!-- Begin navbar
-						================== -->
-						<nav class="navbar pull-right">
+		          <!-- Begin nav main -->
+		          <div id="nav-main" class="collapse navbar-collapse nav-uppercase mob-navbar-collapse-dark">
 
-							<!-- Begin toggle button (get grouped for better mobile display) -->
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main" aria-expanded="false">
-								  <span class="sr-only">Toggle navigation</span>
-								  <span class="icon-bar"></span>
-								  <span class="icon-bar"></span>
-								  <span class="icon-bar"></span>
-								</button>
-							</div>
-							<!-- End toggle button-->
+		            <!-- Begin navbar-nav -->
+		            <ul class="nav navbar-nav navbar-right nav-pills">
 
-							<!-- Begin nav main
-							====================
-							* Use class "nav-separator" to enable nav links separators.
-							* Use class "nav-uppercase" to enable nav uppercase letters.
-							* Use class "mob-navbar-collapse-dark" to enable dark mobile menu.
-							* Use class "mob-navbar-align-center" to enable dark mobile menu.
-							* Note-1: class "mlc" in menu links = close mobile menu when clicking menu link (for one page template version only).
-							* Note-2: class "sm-scroll" in menu links = enable smooth scrolling when clicking menu link (for one page template version only).
-							-->
-							<div id="nav-main" class="collapse navbar-collapse nav-uppercase mob-navbar-collapse-dark">
+		              <li class="active"><a class="mlc sm-scroll" href="/gyms">Add Gym</a></li>
+		              <li><span class="nav-link-separator">/</span></li>
 
-								<!-- Begin navbar-nav
-								======================
-								* Use class "nav-pills" to enable nav pills.
-								* Use class "pills-rounded", "pills-rounded-2x", "pills-rounded-3x" or "pills-rounded-4x" for rounded pills (class "nav-pills" is required).
-								* Use class "pills-gradient" to enable gradient pills (class "nav-pills" is required).
-								* Use class "nav-border-bottom" to enable menu links with bottom border (class "nav-pills" is required).
-								-->
-								<ul class="nav navbar-nav navbar-right nav-pills">
+		              <!-- Begin dropdown -->
+		              <li class="dropdown dropdown-uppercase dropdown-menu-color dropdown-hover">
+		                <a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		                  About<span class="caret-2"><i class="fa fa-angle-down"></i></span>
+		                </a>
+		                <ul class="dropdown-menu">
+		                  <li><a class="mlc sm-scroll" href="#section-1">About Us</a></li>
+		                  <li><a class="mlc sm-scroll" href="#section-2">Our Team</a></li>
+		                  <li><a class="mlc sm-scroll" href="#section-3">Video Promo</a></li>
+		                  <li><a class="mlc sm-scroll" href="#section-7">Testimonials</a></li>
+		                  <li><a class="mlc sm-scroll" href="#section-10">Our Clients</a></li>
 
-									<li class="active"><a class="mlc sm-scroll" href="/gyms">Add Gym</a></li>
-									<li><span class="nav-link-separator">/</span></li>
+		                  <!-- Begin dropdown (submenu)
+		                  ==============================
+		                  * Use class "dropdown-hover" to make navigation toggle on desktop hover.
+		                  * Use class "dropdown-uppercase" to enable dropdown menu uppercase letters.
+		                  * Use class "dropdown-menu-dark" to enable dark dropdown menu.
+		                  * Use class "dropdown-menu-color" to enable custom colored dropdown menu.
+		                  * Use class "dropdown-submenu" for dropdown submenu.
+		                  -->
+		                  <li class="dropdown">
+		                    <a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		                      Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
+		                    </a>
+		                    <ul class="dropdown-menu">
+		                      <li><a class="mlc" href="#">Submenu Link 1</a></li>
+		                      <li><a class="mlc" href="#">Submenu Link 2</a></li>
+		                      <li><a class="mlc" href="#">Submenu Link 3</a></li>
+		                      <li><a class="mlc" href="#">Submenu Link 4</a></li>
+		                      <li><a class="mlc" href="#">Submenu Link 5</a></li>
 
-									<!-- Begin dropdown
-									====================
-									* Use class "dropdown-hover" to make navigation toggle on desktop hover.
-									* Use class "dropdown-uppercase" to enable dropdown menu uppercase letters.
-									* Use class "dropdown-menu-dark" to enable dark dropdown menu.
-									* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
-									* Use class "dropdown-menu-right" to right align the dropdown menu.
-									-->
-									<li class="dropdown dropdown-uppercase dropdown-menu-color dropdown-hover">
-										<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-											About<span class="caret-2"><i class="fa fa-angle-down"></i></span>
-										</a>
-										<ul class="dropdown-menu">
-											<li><a class="mlc sm-scroll" href="#section-1">About Us</a></li>
-											<li><a class="mlc sm-scroll" href="#section-2">Our Team</a></li>
-											<li><a class="mlc sm-scroll" href="#section-3">Video Promo</a></li>
-											<li><a class="mlc sm-scroll" href="#section-7">Testimonials</a></li>
-											<li><a class="mlc sm-scroll" href="#section-10">Our Clients</a></li>
+		                      <!-- Begin dropdown (submenu)
+		                      ==============================
+		                      * Use class "dropdown-hover" to make navigation toggle on desktop hover.
+		                      * Use class "dropdown-uppercase" to enable dropdown menu uppercase letters.
+		                      * Use class "dropdown-menu-dark" to enable dark dropdown menu.
+		                      * Use class "dropdown-menu-color" to enable custom colored dropdown menu.
+		                      * Use class "dropdown-submenu" for dropdown submenu.
+		                      -->
+		                      <li class="dropdown">
+		                        <a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		                          3 Level Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
+		                        </a>
+		                        <ul class="dropdown-menu">
+		                          <li><a class="mlc" href="#">Submenu Link 1</a></li>
+		                          <li><a class="mlc" href="#">Submenu Link 2</a></li>
+		                          <li><a class="mlc" href="#">Submenu Link 3</a></li>
+		                          <li><a class="mlc" href="#">Submenu Link 4</a></li>
+		                          <li><a class="mlc" href="#">Submenu Link 5</a></li>
+		                        </ul> <!-- /.dropdown-menu -->
+		                      </li>
+		                      <!-- End dropdown -->
 
-											<!-- Begin dropdown (submenu)
-											==============================
-											* Use class "dropdown-hover" to make navigation toggle on desktop hover.
-											* Use class "dropdown-uppercase" to enable dropdown menu uppercase letters.
-											* Use class "dropdown-menu-dark" to enable dark dropdown menu.
-											* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
-											* Use class "dropdown-submenu" for dropdown submenu.
-											-->
-											<li class="dropdown dropdown-submenu dropdown-uppercase dropdown-menu-color dropdown-hover">
-												<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-													Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
-												</a>
-												<ul class="dropdown-menu">
-													<li><a class="mlc" href="#">Submenu Link 1</a></li>
-													<li><a class="mlc" href="#">Submenu Link 2</a></li>
-													<li><a class="mlc" href="#">Submenu Link 3</a></li>
-													<li><a class="mlc" href="#">Submenu Link 4</a></li>
-													<li><a class="mlc" href="#">Submenu Link 5</a></li>
+		                    </ul> <!-- /.dropdown-menu -->
+		                  </li>
+		                  <!-- End dropdown -->
 
-													<!-- Begin dropdown (submenu)
-													==============================
-													* Use class "dropdown-hover" to make navigation toggle on desktop hover.
-													* Use class "dropdown-uppercase" to enable dropdown menu uppercase letters.
-													* Use class "dropdown-menu-dark" to enable dark dropdown menu.
-													* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
-													* Use class "dropdown-submenu" for dropdown submenu.
-													-->
-													<li class="dropdown dropdown-submenu dropdown-uppercase dropdown-menu-color dropdown-hover">
-														<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-															3 Level Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
-														</a>
-														<ul class="dropdown-menu">
-															<li><a class="mlc" href="#">Submenu Link 1</a></li>
-															<li><a class="mlc" href="#">Submenu Link 2</a></li>
-															<li><a class="mlc" href="#">Submenu Link 3</a></li>
-															<li><a class="mlc" href="#">Submenu Link 4</a></li>
-															<li><a class="mlc" href="#">Submenu Link 5</a></li>
-														</ul> <!-- /.dropdown-menu -->
-													</li>
-													<!-- End dropdown -->
+		                </ul> <!-- /.dropdown-menu -->
+		              </li>
+		              <!-- End dropdown -->
 
-												</ul> <!-- /.dropdown-menu -->
-											</li>
-											<!-- End dropdown -->
+		              <li><span class="nav-link-separator">/</span></li>
+		              <li><a class="mlc sm-scroll" href="/users/show">Following</a></li>
+		              <li><span class="nav-link-separator">/</span></li>
+		              <li><a class="mlc sm-scroll" href="#section-3">Followers</a></li>
+		              <li><span class="nav-link-separator">/</span></li>
+		              <li><a class="mlc sm-scroll" href="#section-4">People In Your Gym</a></li>
+		              <li><span class="nav-link-separator">/</span></li>
+		              <li><%= link_to 'Edit Account', edit_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%></li>
+		              <li><span class="nav-link-separator">/</span></li>
+		              <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %></li>
+		              <!-- <div class="align-center">
+		                <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %>
+		                <%= link_to 'Edit Account', edit_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%>
+		              </div> -->
 
-										</ul> <!-- /.dropdown-menu -->
-									</li>
-									<!-- End dropdown -->
+		            </ul>
+		            <!-- End navbar-nav -->
 
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="/users/show">Following</a></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="#section-3">Followers</a></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><a class="mlc sm-scroll" href="#section-4">People In Your Gym</a></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><%= link_to 'Edit Account', edit_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%></li>
-									<li><span class="nav-link-separator">/</span></li>
-									<li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %></li>
-                  <!-- <div class="align-center">
-                    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s' %>
-                    <%= link_to 'Edit Account', edit_user_registration_path, :class => "btn btn-primary sm-scroll margin-top-10 wow bounceIn", :'data-wow-delay' => '1.0s'%>
-                  </div> -->
+		          </div>
+		          <!-- End nav main -->
 
-								</ul>
-								<!-- End navbar-nav -->
+		        </nav>
+		        <!-- End navbar -->
 
-							</div>
-							<!-- End nav main -->
+		      </div> <!-- /.container -->
+		    </div>
+		    <!-- End header content -->
 
-						</nav>
-						<!-- End navbar -->
+		  </header>
+		  <!-- End header -->
 
-					</div> <!-- /.container -->
-				</div>
-				<!-- End header content -->
-
-			</header>
-			<!-- End header -->
 
 
 			<!-- ==========================
