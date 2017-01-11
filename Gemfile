@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'figaro'
 gem 'seed_dump'
 gem 'carrierwave'
 gem 'faker'
