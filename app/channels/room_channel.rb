@@ -9,7 +9,6 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-    p data
     Message.create content: data['message'], user: current_user, conversation_id: data["conversation_id"]
   end
 end

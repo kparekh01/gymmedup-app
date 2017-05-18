@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
 
-  def welcome #welcome page
+  def welcome
   end
 
-  def index #user's show page
+  def index
     @gym = Gym.find_by(id: current_user.gym_id)
   end
 
-  def show #another users show page
+  def show 
     @following = current_user.following
     @followers = current_user.followers
   end
