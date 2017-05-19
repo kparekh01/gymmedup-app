@@ -156,7 +156,7 @@
 			-->
 			<section id="intro" class="whole-screen bg-image-parallax" style="background-image: url(<%= asset_path('registration_2.jpg') %>;">
           <div class="text-white margin-top-60">
-            <%= image_tag(current_user.photo)%> <h1>Your Gym:  <%= @gym.name unless @gym == nil %></h1>
+            <%= image_tag(current_user.photo, class: 'img-circle')%> <h1>Your Gym:  <%= @gym.name unless @gym == nil %></h1>
           </div>
           <div class="text-white">
             <h3>User Name:  <%= current_user.user_name %></h3>
