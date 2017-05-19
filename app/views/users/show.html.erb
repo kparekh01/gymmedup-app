@@ -4,7 +4,7 @@
 
     <div class="text-white">
       <% @following.each do |person| %>
-          <%= image_tag(person.photo class: 'img-circle') %>
+          <%= image_tag(person.photo , class: 'img-circle') %>
               <%= form_tag("/conversations", :method => 'post') do %>
               <%= hidden_field_tag(:recipient_id, person.id) %>
               <%= submit_tag "Chat With User", class: "btn btn-primary sm-scroll margin-top-10 wow bounceIn", 'data-wow-delay': '1.0s'%>
