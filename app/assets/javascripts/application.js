@@ -15,5 +15,6 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require theme_manifest
-//= require gymmed_up
+//= require angular
+//= require gymmedUp
 //= require_tree .
